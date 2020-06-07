@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("professional.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h2{
+ color:tan;
+}
+.accordion {
+  background-color: oldlace;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: floralwhite; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse" style="background-color:midnightblue">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Home<i class="fa fa-home"></i></a></li>
+        <li><a href="pro3about.html">ABOUT<i class="fa fa-female"></i></a></li>
+        <li><a href="proacademics.html">Educational-Qualifications<i class="fa fa-graduation-cap"></i></a></li>
+        <li><a href="pro3contactus.html">ContactUs<i class="fa fa-phone"></i></a></li>
+        <li
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<h2><b>      WHO AM I....!!</b></h2>
+
+<button class="accordion"><b>About me</b></button>
+<div class="panel">
+  <p><ul >
+         <li>Name:ILLA NAGA SAMHITHA</li>
+         <li>DOB:11-07-2001</li>
+         <li>Mother Tongue:Telugu</li>
+         <li>Native:ANDHRAPRADESH,Kakinada</li>
+         </ul>
+          persuing my degree(CSE dept) in Sathyabama University,chennai
+  </p>
+</div>
+
+<button class="accordion"><b>Carrer Objective</b></button>
+<div class="panel">
+  <p>To Be a Successfull programmer, and to utilize my skills and Talents in a good way ...</p>
+</div>
+
+<button class="accordion"><b>vision</b></button>
+<div class="panel">
+  <p>To be loved and respected by the society ,and lead a happy life ...</p>
+</div>
+<button class="accordion"><b>Positives</b></button>
+<div class="panel">
+  <p><ul>
+        <li>Family</li>
+        <li>positive thinking</li>
+        <li>Learning Skills</li>
+        <li>HardWorking</li>
+        <li>Thinking Out Of The Box</li>
+        <li>Friends</li>
+        </ul>
+</p>
+</div>
+<button class="accordion"><b>Negatives</b></button>
+<div class="panel">
+  <p><ul>
+         <li>Fear</li>
+         <li>Introvert</li>
+         <li>Thinking more for a suituation then it is required</li>
+         <li>Thinking Out Of The Box</li>
+         </ul>
+         </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
